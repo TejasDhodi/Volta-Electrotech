@@ -89,18 +89,32 @@ export default function Contact() {
             <div className="space-y-6">
               <motion.div
                 whileHover={{ x: 10 }}
-                className="flex items-start gap-4 p-6 bg-card border border-border rounded-lg hover:border-accent transition-colors"
+                className="flex items-center flex-col md:flex-row gap-4 p-6 bg-card border border-border rounded-lg hover:border-accent transition-colors"
               >
-                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-accent" />
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Electrical Engineer</h4>
-                  <p className="text-muted-foreground mb-2">Mr. Hardik Makwana</p>
-                  <a href="tel:+919725325363" className="text-accent font-semibold hover:underline">
-                    +91 9725325363
-                  </a>
-                </div>
+                <>
+                  <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-accent" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Electrical Engineer</h4>
+                    <p className="text-muted-foreground mb-2">Mr. Hardik Makwana</p>
+                    <a href="tel:+919725325363" className="text-accent font-semibold hover:underline">
+                      +91 9725325363
+                    </a>
+                  </div>
+                </>
+                <>
+                  <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-accent" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">For Marketing</h4>
+                    <p className="text-muted-foreground mb-2">Mrs. Sneha Patel</p>
+                    <a href="tel:+918652333119" className="text-accent font-semibold hover:underline">
+                      +91 86523 33119
+                    </a>
+                  </div>
+                </>
               </motion.div>
 
               <motion.div
@@ -215,7 +229,7 @@ export default function Contact() {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     type="submit"
-                    className="w-full py-3 bg-accent hover:bg-accent/90 text-primary font-semibold rounded-lg transition-all"
+                    className="w-full py-3 bg-accent hover:bg-accent/90 text-white font-semibold rounded-lg transition-all"
                   >
                     Send Message
                   </motion.button>
